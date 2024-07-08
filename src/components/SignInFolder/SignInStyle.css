@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.Registration {
+    background-image: url("../../Assets/images/SignUpImg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh; 
+    margin: 0;
+}
+
+.backbtn {
+    display: inline-block;
+    background-color: #E1E1E1; /* Gray background color */
+    color: #b89723; /* Text color */
+    text-transform: uppercase;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 0.625rem;
+    letter-spacing: 0.3em;
+    border-radius: 0;
+    padding: 8px 30px; /* Adjusted padding */
+    transition: all 0.7s ease-out;
+    border: none;
+    border: 1px solid #888888;
+}
+
+.signbtn {
+    display: inline-block;
+    background-color: #b89723; /* Yellow background color */
+    color: #003740; /* Text color */
+    text-transform: uppercase;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 0.625rem;
+    letter-spacing: 0.3em;
+    border-radius: 0;
+    padding: 8px 30px; /* Adjusted padding */
+    transition: all 0.7s ease-out;
+    border: none;
+    border: 1px solid #888888;
+}
+
+.backbtn:hover,
+.signbtn:hover {
+    color: #fff; /* Change text color on hover */
+    border: 1px solid transparent; /* Hide border on hover */
+}
+  
+  

@@ -1,0 +1,8 @@
+.heart-icon {
+    transition: transform 0.2s ease;
+  }
+  
+  .heart-icon-active {
+    transform: scale(1.2);
+  }
+  

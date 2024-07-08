@@ -1,0 +1,14 @@
+.navbar-icon {
+    width: 24px;
+    height: 24px;
+    background-size: cover;
+    cursor: pointer;
+    color: white;
+  }
+  
+  .navbar-buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+  }

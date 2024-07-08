@@ -1,0 +1,53 @@
+/* Default styles */
+.leaflet-container {
+    height: 70vh; /* Adjust the height as needed */
+    width: 100vh; /* Set the width to 100% to match the parent div */
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    .leaflet-container {
+        height: 50vh; /* Adjust the height for smaller screens */
+        width: 60vh; /* Set the width to 100% to match the parent div */
+    }
+}
+/* StepSixStyle.css */
+
+/* Custom styling for the search control */
+/* StepSixStyle.css */
+
+/* Custom styling for the search control */
+/* Default styles */
+.leaflet-container {
+    height: 70vh; /* Adjust the height as needed */
+    width: 100vh; /* Set the width to 100% to match the parent div */
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    .leaflet-container {
+        height: 50vh; /* Adjust the height for smaller screens */
+        width: 60vh; /* Set the width to 100% to match the parent div */
+    }
+}
+
+/* Custom styling for the search control */
+.leaflet-control-geosearch {
+    margin-top: 10px; /* Adjust as needed */
+    width: 100%; /* Adjust the width as needed */
+    position: relative; /* Position relative for absolute positioning of close button */
+}
+
+/* Style the input field */
+.leaflet-control-geosearch input[type="text"] {
+    width: 90%;
+    padding: 8px 30px 8px 8px; /* Adjust padding for the close button */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+
+
+

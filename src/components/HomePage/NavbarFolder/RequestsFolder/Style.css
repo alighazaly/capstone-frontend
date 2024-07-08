@@ -1,0 +1,231 @@
+.card {
+  width: 280px;
+  height: 280px;
+  background: white;
+  border-radius: 32px;
+  padding: 3px;
+  position: relative;
+   box-shadow: #604b4a30 0px 70px 30px -50px; /*kerml l cards taaol requests */
+  transition: all 0.5s ease-in-out;
+}
+
+.card .trash {
+  position: absolute;
+  right: 2rem;
+  top: 1.4rem;
+  background: transparent;
+  border: none;
+}
+
+.card .trash svg {
+  stroke: #003740;
+  stroke-width: 3px;
+}
+
+.card .trash svg:hover {
+  stroke: #f55d56;
+}
+.request-container{
+  background-image: radial-gradient(circle at center center, rgba(33,33,33,0), #003740), repeating-linear-gradient(135deg, #003740 0px, #003740 1px, transparent 1px, transparent 4px), repeating-linear-gradient(45deg, rgba(166, 166, 166, 0.2) 0px, rgba(166, 166, 166, 0.2) 5px, transparent 5px, transparent 6px), linear-gradient(90deg, #003740, #003740);
+  height: auto;
+}
+
+
+.card .bottom {
+  position: absolute;
+  bottom: 3px;
+  left: 3px;
+  right: 3px;
+  background: #003740;
+  top: 80%;
+  border-radius: 29px;
+  z-index: 2;
+  box-shadow: rgba(96, 75, 74, 0.1882352941) 0px 5px 5px 0px inset;
+  overflow: hidden;
+  transition: all 0.5s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+}
+
+.card .bottom .content {
+  position: absolute;
+  bottom: 0;
+  left: 1.5rem;
+  right: 1.5rem;
+  height: 160px;
+}
+
+.card .bottom .content .name {
+  display: block;
+  font-size: 1.2rem;
+  color: white;
+  font-weight: bold;
+}
+
+.card .bottom .content .about-me {
+  display: block;
+  font-size: 0.9rem;
+  color: white;
+  margin-top: 1rem;
+}
+
+.card .bottom .bottom-bottom {
+  position: absolute;
+  bottom: 1rem;
+  left: 1.5rem;
+  right: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.card .bottom .bottom-bottom .social-links-container {
+  display: flex;
+  gap: 1rem;
+}
+
+.card .bottom .bottom-bottom .social-links-container svg {
+  height: 20px;
+  fill: white;
+  filter: drop-shadow(0 5px 5px rgba(165, 132, 130, 0.1333333333));
+}
+
+.card .bottom .bottom-bottom .social-links-container svg:hover {
+  fill: #f55d56;
+  transform: scale(1.2);
+}
+
+.card .bottom .bottom-bottom .button {
+  background: white;
+  color: #000;
+  border: none;
+  border-radius: 20px;
+  font-size: 0.6rem;
+  padding: 0.4rem 0.6rem;
+  box-shadow: rgba(165, 132, 130, 0.1333333333) 0px 5px 5px 0px;
+}
+
+.card .bottom .bottom-bottom .button:hover {
+  background: #29ca01;
+  color: white;
+}
+
+.button-reject{
+  color:black;
+  background-color: white;
+  border-radius: 1rem; /* Rounded corners */
+  padding-left: 10px;
+  padding-right: 10px; 
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-size: 0.75rem; /* Smaller font size */
+}
+.button-reject:hover{
+  background-color: #400c00;
+  color: white;
+}
+
+.button-accept{
+  color:black;
+  background-color: white;
+  border-radius: 1rem; /* Rounded corners */
+  padding-left: 10px;
+  padding-right: 10px; 
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-size: 0.75rem; /* Smaller font size */
+}
+.button-accept:hover{
+  background-color: #0e4000;
+  color: white;
+}
+
+
+.card:hover {
+  border-top-left-radius: 55px;
+}
+.row {
+  display: flex;
+  justify-content: space-between; /* mnshen l requests ytla3o had baaed*/
+}
+.card:hover .bottom {
+  top: 20%;
+  border-radius: 80px 29px 29px 29px;
+  transition: all 0.5s cubic-bezier(0.645, 0.045, 0.355, 1) 0.2s;
+}
+
+.card {
+  position: relative;
+  /* Other card styles */
+}
+
+.card .profile-pic {
+  position: absolute;
+  width: calc(100% - 6px);
+  height: calc(100% - 6px);
+  top: 3px;
+  left: 3px;
+  border-radius: 29px; /* Initial border-radius */
+  z-index: 1;
+  border: 0px solid #003740;
+  overflow: hidden;
+  transition: all 0.5s ease-in-out 0.2s, z-index 0.5s ease-in-out 0.2s;
+  background-size: cover;
+  background-position: center;
+  background-image: var(--profile-pic-url);
+}
+
+.card .profile-pic img {
+  display: none; /* Hide the img element */
+}
+
+.card:hover .profile-pic {
+  width: 100px;
+  height: 100px;
+  top: 10px;
+  left: 10px;
+  border-radius: 50%; /* Keep it circular */
+  z-index: 3;
+  border: 7px solid #003740;
+  box-shadow: rgba(96, 75, 74, 0.1882352941) 0px 5px 5px 0px;
+  transition: all 0.5s ease-in-out, z-index 0.5s ease-in-out 0.1s;
+  background-image: var(--hover-pic-url);
+}
+
+.card:hover .profile-pic:hover {
+  transform: scale(1.3);
+}
+
+
+.card .bottom {
+  /* Other bottom styles */
+}
+
+.card-container {
+  padding: 10px; /* padding ben l cards bel request*/
+}
+@media (min-width: 768px) {
+  .card-container {
+    flex-basis: calc(20% - 20px);
+  }
+}
+.reject-button{
+  color:white;
+  background-color: #400c00;
+  border-radius: 1rem; /* Rounded corners */
+  padding-left: 10px;
+  padding-right: 10px; 
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-size: 0.75rem; /* Smaller font size */
+}
+
+.accept-button{
+  color:white;
+  background-color: #073a00;
+  border-radius: 1rem; /* Rounded corners */
+  padding-left: 10px;
+  padding-right: 10px; 
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-size: 0.75rem; /* Smaller font size */
+  
+}
